@@ -11,6 +11,7 @@ struct IdiomsView: View {
     let idioms: [Idiom] = Bundle.main.decode(fromJson: "idioms")
 
     @State private var searchText: String = ""
+    @State private var selection: Idiom.ID? = nil
 
     var searchResults: [Idiom] {
         guard !searchText.isEmpty else { return idioms }
@@ -18,14 +19,26 @@ struct IdiomsView: View {
     }
 
     var body: some View {
-        NavigationView {
-            List(searchResults) { idiom in
-                NavigationLink(destination: IdiomDetailView(idiom: idiom)) {
-                    Text(idiom.word)
-                }
+        NavigationSplitView {
+            List(searchResults, selection: $selection) { idiom in
+                Text(idiom.word)
             }
             .navigationTitle("成語典")
+            .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $searchText, prompt: "搜尋")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("隨機", systemImage: "shuffle") {
+
+                    }
+                }
+            }
+        } detail: {
+            if let selection {
+                IdiomDetailView(idiom: idioms[selection])
+            } else {
+                Text("選取成語")
+            }
         }
     }
 }
