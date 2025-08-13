@@ -30,6 +30,7 @@ struct IdiomDetailView: View {
                 .foregroundColor(.secondary)
         }
         .padding()
+        .containerRelativeFrame(.horizontal, alignment: .leading)
         .navigationTitle(idiom.word)
         .navigationBarTitleDisplayMode(.inline)
     }
