@@ -32,6 +32,7 @@ struct IdiomsView: View {
             .navigationTitle("成語典")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $searchText, prompt: "搜尋")
+            .sensoryFeedback(.selection, trigger: selection)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     randomButton

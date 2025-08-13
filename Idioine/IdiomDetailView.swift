@@ -11,7 +11,7 @@ struct IdiomDetailView: View {
     let idiom: Idiom
 
     var body: some View {
-        VStack(alignment: .leading, spacing: UIFont.systemFontSize) {
+        VStack(alignment: .leading, spacing: UIFont.systemFontSize * 1.5) {
             Text(idiom.word)
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -22,6 +22,7 @@ struct IdiomDetailView: View {
 
             Text(idiom.definition)
                 .font(.body)
+                .lineSpacing(UIFont.systemFontSize / 3.0)
 
             Spacer()
 
