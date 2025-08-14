@@ -13,11 +13,11 @@ struct IdiomDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: UIFont.systemFontSize * 1.5) {
             Text(idiom.word)
-                .font(.largeTitle)
+                .font(.iansui(withStyle: .largeTitle))
                 .fontWeight(.bold)
 
             Text(idiom.pronunciation)
-                .font(.headline)
+                .font(.iansui(withStyle: .headline))
                 .foregroundColor(.secondary)
 
             Text(idiom.definition)

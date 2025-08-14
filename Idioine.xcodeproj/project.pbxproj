@@ -8,16 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2B07628C2E4CF36A00C75855 /* idioms.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B07628B2E4CF36A00C75855 /* idioms.json */; };
+		2B4271CD2E4DE20000EE3488 /* Iansui-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B4271CC2E4DE20000EE3488 /* Iansui-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B07628B2E4CF36A00C75855 /* idioms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = idioms.json; path = data/idioms.json; sourceTree = "<group>"; };
+		2B4271CC2E4DE20000EE3488 /* Iansui-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Iansui-Regular.ttf"; path = "iansui/fonts/ttf/Iansui-Regular.ttf"; sourceTree = "<group>"; };
 		2B8D819A2E4CE1B300F7D095 /* Idioine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idioine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2B2E42752E4DDDB00084FDFA /* Exceptions for "Idioine" folder in "Idioine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2B8D81992E4CE1B300F7D095 /* Idioine */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2B8D819C2E4CE1B300F7D095 /* Idioine */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2B2E42752E4DDDB00084FDFA /* Exceptions for "Idioine" folder in "Idioine" target */,
+			);
 			path = Idioine;
 			sourceTree = "<group>";
 		};
@@ -37,6 +52,7 @@
 		2B8D81912E4CE1B300F7D095 = {
 			isa = PBXGroup;
 			children = (
+				2B4271CC2E4DE20000EE3488 /* Iansui-Regular.ttf */,
 				2B07628B2E4CF36A00C75855 /* idioms.json */,
 				2B8D819C2E4CE1B300F7D095 /* Idioine */,
 				2B8D819B2E4CE1B300F7D095 /* Products */,
@@ -116,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B07628C2E4CF36A00C75855 /* idioms.json in Resources */,
+				2B4271CD2E4DE20000EE3488 /* Iansui-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +275,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD7P72D22X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Idioine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,8 +304,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD7P72D22X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Idioine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
